@@ -81,7 +81,7 @@ void A()
 }
 
 #undef main
-int main(int argc, char *argv[])
+int main()
 {
 
     background2.rect.x = 730;
