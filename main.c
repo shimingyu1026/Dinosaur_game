@@ -426,7 +426,6 @@ void draw_obs(char *file)
 
 void random(PVOID p)
 {
-    int pe = -1;
     while (1)
     {
         while (obstacle_flag == 0)
@@ -693,6 +692,8 @@ void draw_score()
                 score_d.surface = IMG_Load(nine);
                 SDL_BlitSurface(score_d.surface, NULL, screen, &score_d.rect);
                 SDL_FreeSurface(score_d.surface);
+                break;
+            default:
                 break;
         }
 
